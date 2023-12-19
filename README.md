@@ -37,6 +37,7 @@ Crie um arquivo `.env` na raiz do projeto e adicione as variáveis de ambiente n
 ```env
 PORT=3000
 # Adicione outras variáveis conforme necessário
+```
 
 ## Uso
 
