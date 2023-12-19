@@ -11,24 +11,24 @@ Este é um projeto de uma aplicação Full Stack para buscar informações sobre
 
 1. Clone o repositório:
 
-    ```bash
-    git clone https://github.com/edilsonlm217/movie-search-app.git
-    ```
+   ```bash
+   git clone https://github.com/edilsonlm217/movie-search-app.git
+   ```
 
 2. Instale as dependências:
 
-    ```bash
-    cd movie-search-app
-    npm install  # ou use yarn
-    ```
+   ```bash
+   cd movie-search-app
+   npm install  # ou use yarn
+   ```
 
 3. Crie uma conta no [OMDB API](http://www.omdbapi.com/) para gerar sua API Key.
 
 4. Crie um arquivo `.env` na raiz do projeto e adicione sua API Key:
 
-    ```env
-    OMDB_API_KEY=SuaApiKeyAqui
-    ```
+   ```env
+   OMDB_API_KEY=SuaApiKeyAqui
+   ```
 
 ## Configuração
 
@@ -38,6 +38,18 @@ Crie um arquivo `.env` na raiz do projeto e adicione as variáveis de ambiente n
 PORT=3000
 # Adicione outras variáveis conforme necessário
 ```
+
+### Configurações do Editor
+
+Recomendamos o uso do Visual Studio Code (VSCode) para desenvolvimento. Se você estiver usando o VSCode, as seguintes extensões são recomendadas:
+
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+### Configurações de Formatação e Linting
+
+Este projeto utiliza ESLint e Prettier para manter um código consistente e bem formatado. Certifique-se de instalar as extensões recomendadas para o VSCode conforme mencionado acima.
 
 ## Uso
 
