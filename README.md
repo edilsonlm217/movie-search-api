@@ -74,5 +74,3 @@ Se quiser contribuir, por favor:
 
 Este projeto é licenciado sob a Licença MIT.
 ```
-
-Espero que isso atenda às suas necessidades!
