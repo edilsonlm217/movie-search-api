@@ -47,7 +47,7 @@ export class OmdbService {
         map(response => {
           if (response.data && response.data.Response === 'False') {
             throw new HttpException(
-              'Erro ao obter informações do filme. Por favor, tente novamente mais tarde',
+              'Algo deu errado ao buscar os dados do filme. Verifique o título e tente novamente.',
               HttpStatus.INTERNAL_SERVER_ERROR,
             );
           }
