@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { Observable, map } from 'rxjs';
 import { AxiosResponse } from 'axios';
-import { Movie } from './types';
+import { Movie } from '../types';
 
 @Injectable()
 export class OmdbService {
