@@ -5,7 +5,7 @@ import {
   HttpStatus,
   Query,
 } from '@nestjs/common';
-import { OmdbService } from '../omdb.service';
+import { OmdbService } from '../services/omdb.service';
 import { firstValueFrom } from 'rxjs';
 
 @Controller('movie')
