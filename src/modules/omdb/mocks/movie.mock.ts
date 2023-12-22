@@ -1,4 +1,3 @@
-// movie.mock.ts
 import { Movie } from '../types';
 
 export const createMockMovie = (overrides?: Partial<Movie>): Movie => ({

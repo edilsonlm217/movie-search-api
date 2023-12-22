@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { HttpService, HttpModule } from '@nestjs/axios';
 import { OmdbService } from './omdb.service';
-import { of, throwError, firstValueFrom } from 'rxjs'; // Importe firstValueFrom
+import { of, throwError, firstValueFrom } from 'rxjs';
 import { AxiosResponse } from 'axios';
 import { HttpException, HttpStatus } from '@nestjs/common';
 import { Movie } from '../types';
@@ -49,7 +49,7 @@ describe('OmdbService', () => {
         } as AxiosResponse<Movie>),
       );
 
-      const result = await firstValueFrom(service.searchMovies(title)); // Use firstValueFrom
+      const result = await firstValueFrom(service.searchMovies(title));
       expect(result.data).toEqual(mockMovie);
     });
 
@@ -76,16 +76,17 @@ describe('OmdbService', () => {
 
     it('should throw HttpException on error', async () => {
       const title = 'The Matrix';
-      jest.spyOn(httpService, 'get').mockReturnValueOnce(
-        throwError(
-          () =>
-            // Use uma função de fábrica
-            new HttpException(
-              'Algo deu errado ao buscar os dados do filme. Verifique o título e tente novamente.',
-              HttpStatus.INTERNAL_SERVER_ERROR,
-            ),
-        ),
-      );
+      jest
+        .spyOn(httpService, 'get')
+        .mockReturnValueOnce(
+          throwError(
+            () =>
+              new HttpException(
+                'Algo deu errado ao buscar os dados do filme. Verifique o título e tente novamente.',
+                HttpStatus.INTERNAL_SERVER_ERROR,
+              ),
+          ),
+        );
 
       // Ensure that the service throws the expected exception
       await expect(firstValueFrom(service.searchMovies(title))).rejects.toThrow(
