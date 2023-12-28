@@ -4,8 +4,8 @@ Este é um projeto de uma aplicação Full Stack para buscar informações sobre
 
 ## Pré-requisitos
 
-- [Node.js](https://nodejs.org/) (v14 ou superior)
-- [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/) (recomendado)
+- [Node.js](https://nodejs.org/) (LTS)
+- [npm](https://www.npmjs.com/)
 
 ## Instalação
 
