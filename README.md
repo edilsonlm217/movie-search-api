@@ -19,7 +19,7 @@ Este é um projeto de uma aplicação Full Stack para buscar informações sobre
 
    ```bash
    cd movie-search-app
-   npm install  # ou use yarn
+   npm install
    ```
 
 3. Crie uma conta no [OMDB API](http://www.omdbapi.com/) para gerar sua API Key.
